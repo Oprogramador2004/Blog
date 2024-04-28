@@ -1,0 +1,23 @@
+<%- include ("partials/header.ejs") %>
+<%- include ("partials/homenavbar.ejs") %>
+
+<body>
+<div class="container">
+    <hr>
+    <div class="jumbotron">
+        <h1 class="display-4">Olá, mundo!</h1>
+        <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.</p>
+        <hr class="my-4">
+        <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+      </div>
+    <hr> 
+        <div class="card">
+        <div class="card-header"></div>
+        <h2><%=article.title%></h2>
+        <div class="card-body">
+            <%- article.body %>
+        </div>
+        </div>
+</body>
+<%- include ("partials/footer.ejs") %>
